@@ -1,5 +1,5 @@
-import React form 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
@@ -13,12 +13,12 @@ const App = () => {
     <Router>
       <Header />
       <main>
-        <Switch>
-          <Route exact path="/" component={AboutMe} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/resume" component={Resume} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
       </main>
       <Footer />
     </Router>
@@ -26,4 +26,3 @@ const App = () => {
 };
 
 export default App;
-

@@ -1,9 +1,21 @@
-import React from "react";
-import PortfolioItem from "../components/PortfolioItem";
+
+import PortfolioItem from '../components/PortfolioItem'; 
 
 const Portfolio = () => {
   const projects = [
-    // Add your projects here
+    {
+      title: 'Project 1',
+      description: 'Description of Project 1',
+      link: 'http://example.com/project1',
+      github: 'http://github.com/project1',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description of Project 2',
+      link: 'http://example.com/project2',
+      github: 'http://github.com/project2',
+    },
+    
   ];
 
   return (
