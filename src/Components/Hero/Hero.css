@@ -1,18 +1,67 @@
-.Hero{
+.Hero {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     gap: 35px;
-
-
 }
-.Hero img{
+
+.Hero img {
     margin-top: 150px;
 }
-.hero h1{
+
+.Hero h1 {
     text-align: center;
-    with: 70%;
+    width: 70%;
     font-size: 90px;
-    fotn-weight: 700;
-    
+    font-weight: 600;
+}
+
+.Hero h1 span {
+    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.Hero-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.Hero-connect {
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.Hero-resume {
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+
+.Hero-connect:hover {
+    color: yellow;
+    border: 2px solid #FFF;
+}
+
+.Hero-resume:hover {
+    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
