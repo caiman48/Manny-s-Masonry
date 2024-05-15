@@ -1,21 +1,27 @@
-
-import './navbar.css'
-import logo from '../../assets/logo.png'
+import "./navbar.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
-    return (
-        <div className='navbar'>
-<img src={logo} alt='' />
-            <ul className="nav-menu">
-                <li>About</li>
-                <li>Contact</li>
-                <li>Resume</li>
-                
-            </ul>
-            <div className="nav-connect">Connect With Me</div>
+  return (
+    <div className="navbar">
+      <div className="navbar-content">
+        <img src={logo} alt="" />
+        <ul className="nav-menu">
+          <li>
+            <a href="#hero">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
 
-        </div>
-    )
-}
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
