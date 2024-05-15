@@ -5,3 +5,22 @@
     margin:20px 170px;
 
 }
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style:none;
+    gap:60px;
+    font-size:20px;
+}
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%); 
+    font-size: 22px;
+    cursor:pointer;
+    transition: 0.5 ;
+    color: #FFCC00;
+}
+.nav-connect:hover{
+transform: scale(1.05);
+}
