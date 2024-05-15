@@ -1,20 +1,7 @@
-import Navbar from './Components/navbar/navbar'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import Portfolio from './Components/Portfolio/Portfolio';
-
+import PortfolioContainer from './Components/PortfolioContainer';
 
 const App = () => {
-  return (
-    <div>
-  <Navbar/>
-  <Hero/>
-  <About />
-  <Portfolio />
+  return <PortfolioContainer />;
+};
 
-
-  </div>
-  )
-}
-
-export default App
+export default App;

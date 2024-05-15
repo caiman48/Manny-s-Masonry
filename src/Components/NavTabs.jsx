@@ -1,11 +1,13 @@
+import PropTypes from 'prop-types';
+
 const NavTabs = ({ currentPage, handlePageChange }) => {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="#hero"
-          onClick={() => handlePageChange("Hero")}
-          className={currentPage === "Hero" ? "nav-link active" : "nav-link"}
+          onClick={() => handlePageChange('Hero')}
+          className={currentPage === 'Hero' ? 'nav-link active' : 'nav-link'}
         >
           Home
         </a>
@@ -13,8 +15,8 @@ const NavTabs = ({ currentPage, handlePageChange }) => {
       <li className="nav-item">
         <a
           href="#about"
-          onClick={() => handlePageChange("About")}
-          className={currentPage === "About" ? "nav-link active" : "nav-link"}
+          onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
         </a>
@@ -22,16 +24,19 @@ const NavTabs = ({ currentPage, handlePageChange }) => {
       <li className="nav-item">
         <a
           href="#portfolio"
-          onClick={() => handlePageChange("Portfolio")}
-          className={
-            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
-          }
+          onClick={() => handlePageChange('Portfolio')}
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
         </a>
       </li>
     </ul>
   );
+};
+
+NavTabs.propTypes = {
+  currentPage: PropTypes.string.isRequired,
+  handlePageChange: PropTypes.func.isRequired,
 };
 
 export default NavTabs;
