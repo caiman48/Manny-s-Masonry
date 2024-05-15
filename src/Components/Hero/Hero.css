@@ -9,3 +9,10 @@
 .Hero img{
     margin-top: 150px;
 }
+.hero h1{
+    text-align: center;
+    with: 70%;
+    font-size: 90px;
+    fotn-weight: 700;
+    
+}
