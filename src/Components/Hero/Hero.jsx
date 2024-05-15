@@ -1,6 +1,7 @@
 import './Hero.css'
 import profile_img from "../../assets/profile_img.png";
 
+
 const Hero = () => {
     return (
         <div className='Hero' id="hero">
