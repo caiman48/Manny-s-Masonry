@@ -1,4 +1,4 @@
-import "./Portfolio.css";
+import "./Gallery.css";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
@@ -51,10 +51,10 @@ const projects = [
   },
 ];
 
-const Portfolio = () => {
+const Gallery = () => {
   return (
     <div className="portfolio" id="portfolio">
-      <h2>Portfolio</h2>
+      <h2>Gallery</h2>
       <div className="portfolio-content">
         {projects.map((project, index) => (
           <div className="portfolio-item" key={index}>
@@ -73,4 +73,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Gallery;

@@ -23,10 +23,10 @@ const NavTabs = ({ currentPage, handlePageChange }) => {
       </li>
       <li className="nav-item">
         <a
-          href="#portfolio"
-          onClick={() => handlePageChange("Portfolio")}
+          href="#Gallery"
+          onClick={() => handlePageChange("Gallery")}
           className={
-            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+            currentPage === "Gallery" ? "nav-link active" : "nav-link"
           }
         >
           Portfolio
