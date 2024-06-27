@@ -6,6 +6,7 @@ import Gallery from './Gallery/Gallery';
 import Contact from './Contact/Contact';
 import Resume from './Resume/Resume';
 import Footer from './Footer/Footer';
+import Header from './Header/Header';
 import './nav-tabs.css';
 
 const PortfolioContainer = () => {
@@ -33,6 +34,7 @@ const PortfolioContainer = () => {
 
   return (
     <div>
+      <Header />
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
