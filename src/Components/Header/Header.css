@@ -2,11 +2,74 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
-    padding: 10px;
+    background-color: #278919; 
+    color: #FFD700;
+    padding: 50px; 
+    width: 100%;
+    box-sizing: border-box; 
+  }
+  .nav-container {
+    display: flex;
+    flex-grow: 1; /* Permite que la navegación crezca para empujar el teléfono hacia la derecha */
+    justify-content: center; /* Centra los elementos dentro de este contenedor */
   }
   
-  .header img {
-    max-width: 100%;
-    height: auto;
+  .nav {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .phone-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Cambia esto al color de texto deseado */
+  }
+  
+  .phone-number a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .hero {
+    text-align: center; /* Centra el contenido del hero */
+    padding: 20px;
+  }
+  
+  .hero-image {
+    width: 100%; /* Ajusta el tamaño deseado */
+    max-width: 300px; /* Tamaño máximo */
+    height: auto; /* Mantén la proporción de aspecto */
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .hero-action {
+    margin-top: 20px;
+  }
+  
+  .hero-connect, .hero-resume {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #278919; /* Cambia esto a tu color deseado */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-connect {
+    background-color: #278919;
+    color: white;
+  }
+  
+  .hero-resume {
+    background-color: white;
+    color: #278919;
   }

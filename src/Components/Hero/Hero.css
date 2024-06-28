@@ -1,68 +1,67 @@
-.Hero{
+.Hero {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     gap: 35px;
-
-
+    background-color: #F5F5F5; /* Light Gray */
+    color: #333333; /* Dark Charcoal */
 }
-.Hero img{
+
+.Hero img {
     margin-top: 150px;
 }
-.Hero h1{
+
+.Hero h1 {
     text-align: center;
     width: 70%;
     font-size: 90px;
     font-weight: 600;
-    
-}
-.Hero h1 span{
-    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-
 }
 
-.Hero p{
+.Hero p {
     width: 50%;
-    text-align:center;
+    text-align: center;
     font-size: 24px;
     line-height: 40px;
-
 }
-.Hero-action{
-    display:flex;
-    align-items:center;
+
+.Hero-action {
+    display: flex;
+    align-items: center;
     gap: 20px;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
-.Hero-connect{
+.Hero-connect {
     padding: 25px 45px;
     border-radius: 50px;
-    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%);
+    background-color: rgb(150, 150, 150); /* Gris claro extraído */
+    color: #FFFFFF; /* Blanco para el texto */
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
-.Hero-resume{
+
+.Hero-resume {
     padding: 25px 75px;
     border-radius: 50px;
-    border: 2px solid #FFF;
+    border: 2px solid #333333; /* Dark Charcoal border */
+    color: #333333; /* Dark Charcoal text */
     cursor: pointer;
-
-
+    transition: background 0.3s ease, color 0.3s ease;
 }
-.Hero-connect:hover{
-    color: yellow;
-    border: 2px solid #FFF;
 
+.Hero-connect:hover {
+    background-color: rgb(100, 100, 100); /* Gris más oscuro para hover */
+    color: #FFD700; /* Dorado para el texto en hover */
+    border: 2px solid #FFD700; /* Dorado para el borde en hover */
 }
-.Hero-resume:hover{
-    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%);
+
+.Hero-resume:hover {
+    background: linear-gradient(248deg, #FFD700 0.36%, #006400 100%); /* Gold to Deep Green gradient */
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #FFD700; /* Gold border */
 }

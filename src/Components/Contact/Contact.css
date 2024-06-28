@@ -1,55 +1,55 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
-    background-color: #1e1e1e;
-    color: white;
-  }
-  
-  .contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    background: linear-gradient(248deg, #A50044 0.36%, #004D98 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .form-group .error {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #004d98;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #003366;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #F5F5F5; /* Light Gray */
+  color: #333333; /* Dark Charcoal */
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  background: linear-gradient(248deg, #FFD700 0.36%, #006400 100%); /* Gold to Deep Green gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #00008B, #4169E1); /* Gradient from Deep Blue to Royal Blue */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #000066, #0033CC); /* Darker blue gradient on hover */
+}

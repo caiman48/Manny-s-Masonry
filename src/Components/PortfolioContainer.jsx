@@ -34,8 +34,7 @@ const PortfolioContainer = () => {
 
   return (
     <div>
-      <Header />
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} /> {/* Pasa las props aquí */}
       {renderPage()}
       <Footer />
     </div>
