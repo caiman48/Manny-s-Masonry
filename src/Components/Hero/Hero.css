@@ -1,67 +1,90 @@
 .Hero {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
     gap: 35px;
-    background-color: #F5F5F5; /* Light Gray */
-    color: #333333; /* Dark Charcoal */
-}
-
-.Hero img {
-    margin-top: 150px;
-}
-
-.Hero h1 {
+    background-color: #F5F5F5;
+    color: #333333;
+    padding: 20px;
+  }
+  
+  .Hero-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-profile-image {
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo específico */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+ 
+  .hero-rustica-image {
+    width: 100% !important;
+    max-width: 150px !important;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .Hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Hero h1 {
     text-align: center;
-    width: 70%;
+    width: 100%;
     font-size: 90px;
     font-weight: 600;
-}
-
-.Hero p {
-    width: 50%;
+  }
+  
+  .Hero p {
+    width: 100%;
     text-align: center;
     font-size: 24px;
     line-height: 40px;
-}
-
-.Hero-action {
+  }
+  
+  .Hero-action {
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 50px;
-}
-
-.Hero-connect {
+    margin-top: 20px;
+  }
+  
+  .Hero-connect {
     padding: 25px 45px;
     border-radius: 50px;
-    background-color: rgb(150, 150, 150); /* Gris claro extraído */
-    color: #FFFFFF; /* Blanco para el texto */
+    background-color: rgb(150, 150, 150);
+    color: #FFFFFF;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
-}
-
-.Hero-resume {
+  }
+  
+  .Hero-resume {
     padding: 25px 75px;
     border-radius: 50px;
-    border: 2px solid #333333; /* Dark Charcoal border */
-    color: #333333; /* Dark Charcoal text */
+    border: 2px solid #333333;
+    color: #333333;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
-}
-
-.Hero-connect:hover {
-    background-color: rgb(100, 100, 100); /* Gris más oscuro para hover */
-    color: #FFD700; /* Dorado para el texto en hover */
-    border: 2px solid #FFD700; /* Dorado para el borde en hover */
-}
-
-.Hero-resume:hover {
-    background: linear-gradient(248deg, #FFD700 0.36%, #006400 100%); /* Gold to Deep Green gradient */
+  }
+  
+  .Hero-connect:hover {
+    background-color: rgb(100, 100, 100);
+    color: #FFD700;
+    border: 2px solid #FFD700;
+  }
+  
+  .Hero-resume:hover {
+    background: linear-gradient(248deg, #FFD700 0.36%, #006400 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: 2px solid #FFD700; /* Gold border */
-}
+    border: 2px solid #FFD700;
+  }

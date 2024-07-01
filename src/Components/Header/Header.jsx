@@ -1,4 +1,4 @@
-import NavTabs from '../NavTabs'; // Asegúrate de ajustar la ruta si es necesario
+import NavTabs from '../NavTabs';
 import './Header.css';
 
 const Header = ({ currentPage, handlePageChange }) => {

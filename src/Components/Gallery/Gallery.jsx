@@ -53,11 +53,11 @@ const projects = [
 
 const Gallery = () => {
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="Gallery" id="Gallery">
       <h2>Gallery</h2>
-      <div className="portfolio-content">
+      <div className="Gallery-content">
         {projects.map((project, index) => (
-          <div className="portfolio-item" key={index}>
+          <div className="Gallery-item" key={index}>
             <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
               <img src={project.img} alt={project.title} />
             </a>

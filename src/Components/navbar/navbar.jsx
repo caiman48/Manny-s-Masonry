@@ -29,7 +29,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
           <a
             href="#Gallery"
             onClick={() => handlePageChange('Gallery')}
-            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'Gallery' ? 'nav-link active' : 'nav-link'}
           >
             Portfolio
           </a>

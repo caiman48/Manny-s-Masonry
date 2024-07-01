@@ -19,7 +19,7 @@ const PortfolioContainer = () => {
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Portfolio') {
+    if (currentPage === 'Gallery') {
       return <Gallery />;
     }
     if (currentPage === 'Contact') {
