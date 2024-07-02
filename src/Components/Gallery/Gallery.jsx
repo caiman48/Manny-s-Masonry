@@ -12,7 +12,7 @@ const projects = [
     title: "Project 1",
     description: "Description of Project 1.",
     liveLink: "https://matae300.github.io/MovieMingle-Project/",
-    githubLink: "https://github.com/Matae300/MovieMingle-Project"
+    
   },
   {
     img: project2,

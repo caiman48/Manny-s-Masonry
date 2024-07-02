@@ -1,7 +1,7 @@
 .Hero {
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     gap: 35px;
     background-color: #F5F5F5;
     color: #333333;
@@ -10,22 +10,15 @@
   
   .Hero-images {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
-  .hero-profile-image {
+  .Hero-images img {
     width: 100%;
-    max-width: 300px; /* Tamaño máximo específico */
+    max-width: 300px; /* Ensure both images have the same max-width */
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
- 
-  .hero-rustica-image {
-    width: 100% !important;
-    max-width: 150px !important;
-    height: auto;
-    border-radius: 10px;
   }
   
   .Hero-text {

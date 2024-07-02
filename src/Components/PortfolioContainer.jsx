@@ -8,6 +8,7 @@ import Resume from './Resume/Resume';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import './nav-tabs.css';
+import '../index.css';
 
 const PortfolioContainer = () => {
   const [currentPage, setCurrentPage] = useState('Hero');
@@ -35,7 +36,9 @@ const PortfolioContainer = () => {
   return (
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} /> {/* Pasa las props aquí */}
-      {renderPage()}
+      <div className="main-content">
+        {renderPage()}
+      </div>
       <Footer />
     </div>
   );

@@ -4,79 +4,85 @@
   align-items: center;
   background: linear-gradient(to bottom, #278919 0%, #d1e3da 100%);
   color: #FFD700;
-  padding: 50px 50px; 
+  padding: 20px 50px; /* Adjust padding as necessary */
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  position: fixed; /* Fix the header at the top */
+  top: 0; /* Position it at the top of the page */
+  z-index: 1000; /* Ensure it stays above other content */
 }
-  .nav-container {
-    display: flex;
-    flex-grow: 1; /* Permite que la navegación crezca para empujar el teléfono hacia la derecha */
-    justify-content: center; /* Centra los elementos dentro de este contenedor */
-  }
-  
-  .nav {
-    display: flex;
-    gap: 12px;
-  }
-  
-  .phone-number {
-    font-size: 16px;
-    font-weight: bold;
-    color: white; /* Cambia esto al color de texto deseado */
-  }
-  
-  .phone-number a {
-    text-decoration: none;
-    color: inherit;
-  }
 
-  .body-gradient {
-    background: linear-gradient(to bottom, #278919 0%, #ffffff 100%);
-    min-height: 100vh; /* Asegura que el degradado cubra toda la altura de la pantalla */
-    margin: 0;
-  }
+.nav-container {
+  display: flex;
+  flex-grow: 1; /* Allow the navigation to grow to push the phone number to the right */
+  justify-content: center; /* Center the elements within this container */
+}
 
-  .hero {
-    text-align: center; /* Centra el contenido del hero */
-    padding: 20px;
-  }
-  
-  .hero-image {
-    width: 100%; /* Ajusta el tamaño deseado */
-    max-width: 300px; /* Tamaño máximo */
-    height: auto; /* Mantén la proporción de aspecto */
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-top: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-  .hero-action {
-    margin-top: 20px;
-  }
-  
-  .hero-connect, .hero-resume {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1px solid #278919; /* Cambia esto a tu color deseado */
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .hero-connect {
-    background-color: #278919;
-    color: white;
-  }
-  
-  .hero-resume {
-    background-color: white;
-    color: #278919;
-  }
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.phone-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: white; /* Change this to the desired text color */
+}
+
+.phone-number a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.body-gradient {
+  background: linear-gradient(to bottom, #278919 0%, #ffffff 100%);
+  min-height: 100vh; /* Ensure the gradient covers the entire screen height */
+  margin: 0;
+  padding-top: 80px; /* Adjust padding to prevent content from being hidden behind the fixed header */
+}
+
+.hero {
+  text-align: center; /* Center the hero content */
+  padding: 20px;
+}
+
+.hero-image {
+  width: 100%; /* Adjust to desired size */
+  max-width: 300px; /* Maximum size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hero-action {
+  margin-top: 20px;
+}
+
+.hero-connect,
+.hero-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #278919; /* Change this to your desired color */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-connect {
+  background-color: #278919;
+  color: white;
+}
+
+.hero-resume {
+  background-color: white;
+  color: #278919;
+}

@@ -3,6 +3,9 @@
   padding:0;
 
 }
+.main-content {
+  padding-top: 100px; /* Adjust this based on the height of your header */
+}
 body{
   height:100vh;
   background-color: #F5F5F5;
