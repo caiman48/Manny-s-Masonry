@@ -2,87 +2,68 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #278919 0%, #d1e3da 100%);
-  color: #FFD700;
-  padding: 20px 50px; /* Adjust padding as necessary */
+  background: white !important; /* Cambiar a blanco */
+  color: #333 !important;
+  padding: 20px 50px !important;
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-  position: fixed; /* Fix the header at the top */
-  top: 0; /* Position it at the top of the page */
-  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
 }
 
 .nav-container {
   display: flex;
-  flex-grow: 1; /* Allow the navigation to grow to push the phone number to the right */
-  justify-content: center; /* Center the elements within this container */
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .nav {
   display: flex;
-  gap: 12px;
+  gap: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333 !important;
+}
+
+.nav a {
+  color: inherit !important;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #278919 !important;
 }
 
 .phone-number {
-  font-size: 16px;
-  font-weight: bold;
-  color: white; /* Change this to the desired text color */
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #278919 !important;
+  display: flex;
+  align-items: center;
 }
 
 .phone-number a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: inherit !important;
+  display: flex;
+  align-items: center;
 }
 
-.body-gradient {
-  background: linear-gradient(to bottom, #278919 0%, #ffffff 100%);
-  min-height: 100vh; /* Ensure the gradient covers the entire screen height */
-  margin: 0;
-  padding-top: 80px; /* Adjust padding to prevent content from being hidden behind the fixed header */
-}
-
-.hero {
-  text-align: center; /* Center the hero content */
-  padding: 20px;
-}
-
-.hero-image {
-  width: 100%; /* Adjust to desired size */
-  max-width: 300px; /* Maximum size */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-top: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-.hero-action {
-  margin-top: 20px;
-}
-
-.hero-connect,
-.hero-resume {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  border: 1px solid #278919; /* Change this to your desired color */
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero-connect {
-  background-color: #278919;
-  color: white;
-}
-
-.hero-resume {
-  background-color: white;
-  color: #278919;
+.phone-icon {
+  margin-right: 5px;
 }

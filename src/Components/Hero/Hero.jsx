@@ -5,19 +5,23 @@ import Rustica_img from "../../assets/Rustica.png"; // Importa la imagen renombr
 
 const Hero = () => {
     return (
-        <div className='Hero' id="hero">
-            <div className='Hero-images'>
-                <img src={profile_img} className="hero-image" alt="Image 1" />
-                <img src={Rustica_img} className="hero-image" alt="Image 2" />
-            </div>
-            <h1>Manny&apos;s Stone Work</h1>
-            <p>BBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
-            <div className="Hero-action">
-                <div className="Hero-connect">Contact Me</div>
-                <div className="Hero-resume">My work</div>
-            </div>
+      <div className="Hero">
+        <div className="hero-image1-container">
+          <img src={Rustica_img} className="hero-image1" alt="Profile" />
         </div>
-    )
-}
-
-export default Hero
+        <div className="Hero-images">
+          <img src={profile_img} className="hero-image2" alt="Rustica" />
+        </div>
+        <div className="hero-text">
+          <h1>Manny&apos;s Stone Work</h1>
+          <p>BBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
+          <div className="hero-action">
+            <div className="hero-connect">Contact Me</div>
+            <div className="hero-resume">My work</div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  
+  export default Hero;
