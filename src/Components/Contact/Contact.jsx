@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
@@ -20,8 +20,6 @@ const Contact = () => {
       ...formData,
       [name]: value,
     });
-
-    validateField(name, value);
   };
 
   const validateField = (name, value) => {
@@ -40,10 +38,10 @@ const Contact = () => {
       error = "Message is required";
     }
 
-    setErrors({
-      ...errors,
+    setErrors((prevErrors) => ({
+      ...prevErrors,
       [name]: error,
-    });
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -59,8 +57,9 @@ const Contact = () => {
       }
     });
 
+    setErrors(newErrors);
+
     if (Object.values(newErrors).some((error) => error)) {
-      setErrors(newErrors);
       return;
     }
 
@@ -70,7 +69,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} noValidate>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -79,9 +78,10 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            onBlur={() => validateField("name", formData.name)}
+            onBlur={(e) => validateField(e.target.name, e.target.value)}
+            aria-describedby="nameError"
           />
-          {errors.name && <span className="error">{errors.name}</span>}
+          {errors.name && <span id="nameError" className="error">{errors.name}</span>}
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
@@ -91,9 +91,10 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            onBlur={() => validateField("email", formData.email)}
+            onBlur={(e) => validateField(e.target.name, e.target.value)}
+            aria-describedby="emailError"
           />
-          {errors.email && <span className="error">{errors.email}</span>}
+          {errors.email && <span id="emailError" className="error">{errors.email}</span>}
         </div>
         <div className="form-group">
           <label htmlFor="message">Message</label>
@@ -102,9 +103,10 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            onBlur={() => validateField("message", formData.message)}
+            onBlur={(e) => validateField(e.target.name, e.target.value)}
+            aria-describedby="messageError"
           ></textarea>
-          {errors.message && <span className="error">{errors.message}</span>}
+          {errors.message && <span id="messageError" className="error">{errors.message}</span>}
         </div>
         <button type="submit">Submit</button>
       </form>
