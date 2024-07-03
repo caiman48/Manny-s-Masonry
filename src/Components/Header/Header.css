@@ -20,7 +20,7 @@
 }
 
 .logo {
-  width: 100px;
+  width: 121px !important; /* Incrementa el tamaño del logo un 10% adicional */
   height: auto;
 }
 
@@ -28,20 +28,21 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  margin-right: 0 !important; /* Elimina el margen derecho para acercar el nav bar al número de teléfono */
 }
 
 .nav {
   display: flex;
   gap: 20px;
   font-family: 'Arial', sans-serif;
-  font-size: 16px;
+  font-size: 19.36px !important; /* Incrementa el tamaño de la letra un 10% adicional */
   color: #333 !important;
 }
 
 .nav a {
   color: inherit !important;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 12.1px 18.15px !important; /* Incrementa el padding un 10% adicional */
   transition: color 0.3s ease;
 }
 
@@ -50,11 +51,12 @@
 }
 
 .phone-number {
-  font-size: 16px !important;
+  font-size: 19.36px !important; /* Incrementa el tamaño de la letra un 10% adicional */
   font-weight: bold !important;
   color: #278919 !important;
   display: flex;
   align-items: center;
+  margin-left: 10px !important; /* Ajusta el margen izquierdo para acercar el número de teléfono al nav bar */
 }
 
 .phone-number a {
@@ -65,5 +67,7 @@
 }
 
 .phone-icon {
-  margin-right: 5px;
+  margin-right: 5.5px !important;
+  font-size: 19.36px !important; /* Incrementa el tamaño del icono un 10% adicional */
+  color: #FFD700 !important;
 }

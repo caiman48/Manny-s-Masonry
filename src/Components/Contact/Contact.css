@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
+  height: 80vh; /* Ajusta la altura para centrar el contenido en la pantalla */
   padding: 50px 20px;
   background-color: #F5F5F5; /* Light Gray */
   color: #333333; /* Dark Charcoal */

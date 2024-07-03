@@ -31,7 +31,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             onClick={() => handlePageChange('Gallery')}
             className={currentPage === 'Gallery' ? 'nav-link active' : 'nav-link'}
           >
-            Portfolio
+            Gallery
           </a>
         </li>
         <li>
@@ -43,15 +43,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             Contact
           </a>
         </li>
-        <li>
-          <a
-            href="#resume"
-            onClick={() => handlePageChange('Resume')}
-            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-          >
-            Resume
-          </a>
-        </li>
+        
       </ul>
     </div>
   );

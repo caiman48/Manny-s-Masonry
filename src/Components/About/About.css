@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Añadir para centrar verticalmente */
+  height: 80vh; /* Ajusta la altura para centrar verticalmente el contenido en la pantalla */
   padding: 50px 20px;
   background-color: #F5F5F5; /* Light Gray */
   color: #333333; /* Dark Charcoal */
@@ -18,6 +20,7 @@
 
 .about-content {
   display: flex;
+  flex-direction: column; /* Cambiado de row a column para apilar la imagen y el texto verticalmente */
   align-items: center;
   gap: 20px;
 }
@@ -32,4 +35,5 @@
   font-size: 18px;
   line-height: 1.6;
   max-width: 600px;
+  text-align: center; /* Centrar el texto */
 }

@@ -1,27 +1,32 @@
-import './Hero.css'
-import profile_img from "../../assets/profile_img.png";
-import Rustica_img from "../../assets/Rustica.png"; // Importa la imagen renombrada
-
+import './Hero.css';
+import Rustica_img from "../../assets/Rustica.png";
+import project1_img from "../../assets/project1.png"; // Asegúrate de tener esta imagen en la carpeta assets
+import project2_img from "../../assets/Imagen2.png"; // Asegúrate de tener esta imagen en la carpeta assets
 
 const Hero = () => {
-    return (
-      <div className="Hero">
-        <div className="hero-image1-container">
-          <img src={Rustica_img} className="hero-image1" alt="Profile" />
-        </div>
-        <div className="Hero-images">
-          <img src={profile_img} className="hero-image2" alt="Rustica" />
-        </div>
-        <div className="hero-text">
-          <h1>Manny&apos;s Stone Work</h1>
-          <p>BBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
-          <div className="hero-action">
-            <div className="hero-connect">Contact Me</div>
-            <div className="hero-resume">My work</div>
+  return (
+    <div className="Hero">
+      <div className="hero-image1-container">
+        <img src={Rustica_img} className="hero-image1" alt="Rustica" />
+      </div>
+      <div className="projects-container">
+        <div className="project-item">
+          <img src={project1_img} alt="Project 1" className="project-image" />
+          <div className="project-content">
+            <h2>Modern Stone Facade</h2>
+            <p>This project showcases a modern stone facade for a residential property, featuring clean lines and a combination of natural stone textures that provide a contemporary look.</p>
           </div>
         </div>
+        <div className="project-item">
+          <div className="project-content">
+            <h2>Elegant Garden Wall</h2>
+            <p>We built an elegant garden wall using carefully selected stones to blend seamlessly with the surrounding landscape, enhancing the natural beauty of the garden space.</p>
+          </div>
+          <img src={project2_img} alt="Project 2" className="project-image" />
+        </div>
       </div>
-    );
-  };
-  
-  export default Hero;
+    </div>
+  );
+};
+
+export default Hero;

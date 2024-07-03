@@ -13,18 +13,3 @@ body {
 .main-content {
   padding-top: 10px; /* Ajusta esto según la altura de tu header */
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to bottom, #278919 0%, #d1e3da 100%);
-  color: #FFD700;
-  padding: 40px 50px !important; /* Ajusta padding según sea necesario y usa !important */
-  width: 100%;
-  box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
-  position: fixed; /* Fija el header en la parte superior */
-  top: 0; /* Posiciónalo en la parte superior de la página */
-  z-index: 1000; /* Asegúrate de que esté encima de otros contenidos */
-}
