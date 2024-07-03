@@ -6,20 +6,52 @@
   background-color: #F5F5F5;
   color: #333333;
   width: 100%;
-  margin-top: 60px; /* Ajusta esto según la altura del header */
+  margin-top: 60px; /* Adjust this according to the height of the header */
 }
 
 .hero-image1-container {
   width: 100%;
-  height: 60vh; /* Ajusta la altura según tus necesidades */
+  height: 60vh; /* Adjust the height as needed */
   overflow: hidden;
-  margin-top: 0; /* Ajusta esto para que la imagen comience donde termina el header */
+  margin-top: 0; /* Adjust to start the image right below the header */
 }
 
 .hero-image1 {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta esto para mantener las proporciones de la imagen */
+  object-fit: cover; /* Adjust to maintain image proportions */
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+.text-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #278919;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-title .icon {
+  font-size: 36px;
+  margin: 0 10px;
+}
+
+.text-subtitle {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  font-style: italic;
 }
 
 .projects-container {
@@ -53,18 +85,21 @@
 }
 
 .project-content h2 {
+  font-family: 'EB Garamond', serif;
   margin-top: 0;
-  font-size: 24px; /* Ajusta el tamaño de fuente */
-  color: #278919; /* Cambia el color */
-  font-weight: bold; /* Ajusta el grosor de la fuente */
-  text-align: center; /* Centra el texto */
+  font-size: 24px; /* Adjust the font size */
+  color: #278919; /* Change the color */
+  font-weight: bold; /* Adjust the font weight */
+  text-align: center; /* Center the text */
 }
 
 .project-content p {
-  font-size: 16px; /* Ajusta el tamaño de fuente */
-  color: #555; /* Cambia el color */
-  line-height: 1.5; /* Ajusta el interlineado para mejorar la legibilidad */
-  text-align: justify; /* Justifica el texto */
+  font-family: 'EB Garamond', serif;
+  font-size: 16px; /* Adjust the font size */
+  color: #555; /* Change the color */
+  line-height: 1.5; /* Adjust line spacing for better readability */
+  text-align: justify; /* Justify the text */
+  font-style: italic; /* Add italic style */
 }
 
 .project-button {
