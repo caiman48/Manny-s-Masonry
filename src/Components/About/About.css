@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Añadir para centrar verticalmente */
-  height: 80vh; /* Ajusta la altura para centrar verticalmente el contenido en la pantalla */
+  justify-content: center;
+  height: 100vh;
   padding: 50px 20px;
-  background-color: #F5F5F5; /* Light Gray */
-  color: #333333; /* Dark Charcoal */
+  background-color: #F5F5F5;
+  color: #333333;
 }
 
 .about h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  background: linear-gradient(248deg, #FFD700 0.36%, #006400 100%); /* Gold to Deep Green gradient */
+  background: linear-gradient(248deg, #FFD700 0.36%, #006400 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -20,20 +20,27 @@
 
 .about-content {
   display: flex;
-  flex-direction: column; /* Cambiado de row a column para apilar la imagen y el texto verticalmente */
+  flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+  max-width: 900px;
 }
 
-.about-content img {
+.about-logo {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
-.about-content p {
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.about-text p {
   font-size: 18px;
   line-height: 1.6;
-  max-width: 600px;
-  text-align: center; /* Centrar el texto */
+  text-align: left;
 }
