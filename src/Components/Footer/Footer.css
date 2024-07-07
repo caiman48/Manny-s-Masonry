@@ -20,3 +20,15 @@
   .footer-content a:hover {
     color: #ffcc00;
   }
+
+  @media (max-width: 768px) {
+    .footer-content p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-content p {
+      font-size: 12px;
+    }
+  }

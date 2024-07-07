@@ -71,3 +71,26 @@
   font-size: 19.36px !important; /* Incrementa el tamaño del icono un 10% adicional */
   color: #FFD700 !important;
 }
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 10px !important;
+  }
+
+  .logo {
+    width: 80px !important; /* Further reduce logo size */
+  }
+
+  .nav a {
+    padding: 10px 15px !important; /* Reduce padding */
+  }
+
+  .phone-number {
+    font-size: 14px !important;
+    margin-top: 5px !important;
+  }
+
+  .phone-icon {
+    font-size: 14px !important;
+  }
+}

@@ -138,3 +138,43 @@
 .project-button:hover {
   background-color: #FFD700;
 }
+
+@media (max-width: 768px) {
+  .hero-image1-container {
+    height: 40vh; /* Adjust height for smaller screens */
+  }
+  
+  .text-title {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .text-title .icon {
+    font-size: 28px; /* Adjust icon size for smaller screens */
+  }
+
+  .text-subtitle {
+    font-size: 18px; /* Adjust subtitle font size for smaller screens */
+  }
+
+  .project-item {
+    width: 90%; /* Make project items take more width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image1-container {
+    height: 30vh; /* Adjust height for very small screens */
+  }
+
+  .text-title {
+    font-size: 24px; /* Adjust font size for very small screens */
+  }
+
+  .text-title .icon {
+    font-size: 24px; /* Adjust icon size for very small screens */
+  }
+
+  .text-subtitle {
+    font-size: 16px; /* Adjust subtitle font size for very small screens */
+  }
+}
