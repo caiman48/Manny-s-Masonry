@@ -108,13 +108,17 @@
 }
 
 @media (min-width: 769px) {
+  .phone-number {
+    margin-left: auto; /* Mueve el número de teléfono hacia la derecha */
+    margin-right: 20px; /* Ajusta este valor según lo necesites */
+  }
+
   .nav-container {
     display: flex !important;
   }
 
-  .phone-number {
-    margin-right: 0;
-    margin-left: auto;
+  .hamburger-menu {
+    display: none;
   }
 }
 
