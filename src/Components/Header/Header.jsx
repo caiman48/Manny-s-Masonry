@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import '../../index.css'; // Asegúrate de que esta línea esté antes
-import './Header.css'; // Asegúrate de que esta línea esté después
+import '../../index.css';
+import './Header.css';
 
 import logo from '../../assets/logo.png';
 

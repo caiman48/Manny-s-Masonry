@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white !important; /* Cambiar a blanco */
+  background: white !important;
   color: #333 !important;
   padding: 20px 50px !important;
   width: 100%;
@@ -20,18 +20,18 @@
 }
 
 .logo {
-  width: 121px !important; /* Incrementa el tamaño del logo un 10% adicional */
+  width: 121px !important;
   height: auto;
 }
 
 .phone-number {
-  font-size: 19.36px !important; /* Incrementa el tamaño de la letra un 10% adicional */
+  font-size: 19.36px !important;
   font-weight: bold !important;
   color: #5a8369 !important;
   display: flex;
   align-items: center;
-  margin-left: auto; /* Mueve el número de teléfono hacia la derecha */
-  margin-right: 20px; /* Ajusta este valor según lo necesites */
+  margin-left: auto !important;
+  margin-right: 20px !important;
 }
 
 .phone-number a {
@@ -43,7 +43,7 @@
 
 .phone-icon {
   margin-right: 5.5px !important;
-  font-size: 19.36px !important; /* Incrementa el tamaño del icono un 10% adicional */
+  font-size: 19.36px !important;
   color: #e3c516 !important;
 }
 
@@ -57,7 +57,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  margin-right: 0 !important; /* Elimina el margen derecho para acercar el nav bar al número de teléfono */
+  margin-right: 0 !important;
 }
 
 .nav-menu {
@@ -69,20 +69,20 @@
 
 .nav-link {
   text-decoration: none;
-  color: black; /* Cambiar a negro */
+  color: black;
   font-size: 18px;
   padding: 10px 15px;
   transition: color 0.3s ease;
 }
 
 .nav-link.active {
-  color: green; /* Cambiar a verde cuando se haga clic */
+  color: green;
   font-weight: bold;
 }
 
 @media (max-width: 768px) {
   .nav-container {
-    display: none; /* Ocultar el nav-container en pantallas pequeñas */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -102,15 +102,25 @@
   }
 
   .nav-link {
-    font-size: 16px; /* Ajustar tamaño de fuente para pantallas más pequeñas */
-    padding: 8px 12px; /* Ajustar padding para pantallas más pequeñas */
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .phone-number {
+    order: 2;
+    margin-left: 0;
+  }
+
+  .hamburger-menu {
+    order: 1;
   }
 }
 
 @media (min-width: 769px) {
   .phone-number {
-    margin-left: auto; /* Mueve el número de teléfono hacia la derecha */
-    margin-right: 20px; /* Ajusta este valor según lo necesites */
+    order: 1; /* Make sure phone number is ordered first */
+    margin-left: auto !important;
+    margin-right: 20px !important;
   }
 
   .nav-container {
@@ -128,12 +138,12 @@
   }
 
   .logo {
-    width: 80px !important; /* Reducir aún más el tamaño del logo */
+    width: 80px !important;
   }
 
   .nav-link {
-    font-size: 14px; /* Ajustar tamaño de fuente para pantallas muy pequeñas */
-    padding: 6px 10px; /* Ajustar padding para pantallas muy pequeñas */
+    font-size: 14px;
+    padding: 6px 10px;
   }
 
   .phone-number {
