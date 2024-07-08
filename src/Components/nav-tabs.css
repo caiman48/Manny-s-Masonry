@@ -109,3 +109,25 @@
     font-size: 14px !important;
   }
 }
+
+/* Styles for nav-tabs */
+.nav-tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+.nav-link.active {
+  color: yellow;
+  font-weight: bold;
+}

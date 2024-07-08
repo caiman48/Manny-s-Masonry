@@ -1,7 +1,6 @@
 import '../../index.css'; // Asegúrate de que esta línea esté antes
 import './Header.css'; // Asegúrate de que esta línea esté después
 
-
 import logo from '../../assets/logo.png';
 
 const Header = ({ currentPage, handlePageChange }) => {
@@ -15,8 +14,8 @@ const Header = ({ currentPage, handlePageChange }) => {
           <li>
             <a
               href="#hero"
-              onClick={() => handlePageChange("Hero")}
-              className={currentPage === "Hero" ? "nav-link active" : "nav-link"}
+              onClick={() => handlePageChange('Hero')}
+              className={currentPage === 'Hero' ? 'nav-link active' : 'nav-link'}
             >
               Home
             </a>
@@ -24,8 +23,8 @@ const Header = ({ currentPage, handlePageChange }) => {
           <li>
             <a
               href="#about"
-              onClick={() => handlePageChange("About")}
-              className={currentPage === "About" ? "nav-link active" : "nav-link"}
+              onClick={() => handlePageChange('About')}
+              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
             >
               About
             </a>
@@ -33,8 +32,8 @@ const Header = ({ currentPage, handlePageChange }) => {
           <li>
             <a
               href="#Gallery"
-              onClick={() => handlePageChange("Gallery")}
-              className={currentPage === "Gallery" ? "nav-link active" : "nav-link"}
+              onClick={() => handlePageChange('Gallery')}
+              className={currentPage === 'Gallery' ? 'nav-link active' : 'nav-link'}
             >
               Gallery
             </a>
@@ -42,8 +41,8 @@ const Header = ({ currentPage, handlePageChange }) => {
           <li>
             <a
               href="#contact"
-              onClick={() => handlePageChange("Contact")}
-              className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+              onClick={() => handlePageChange('Contact')}
+              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
             >
               Contact
             </a>
@@ -51,7 +50,9 @@ const Header = ({ currentPage, handlePageChange }) => {
         </ul>
       </div>
       <div className="phone-number">
-        <a href="tel:+1234567890"><span className="phone-icon">📞</span> +1 (234) 567-890</a>
+        <a href="tel:+1234567890">
+          <span className="phone-icon">📞</span> +1 (234) 567-890
+        </a>
       </div>
     </div>
   );
