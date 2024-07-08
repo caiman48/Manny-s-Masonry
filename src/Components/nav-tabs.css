@@ -1,20 +1,111 @@
-.nav-tabs {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white !important; /* Cambiar a blanco */
+  color: #333 !important;
+  padding: 20px 50px !important;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 121px !important; /* Incrementa el tamaño del logo un 10% adicional */
+  height: auto;
+}
+
+.nav-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin-right: 0 !important; /* Elimina el margen derecho para acercar el nav bar al número de teléfono */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FFD700; /* Gold */
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #00008B; /* Deep Blue */
+  font-weight: bold;
+}
+
+.phone-number {
+  font-size: 19.36px !important; /* Incrementa el tamaño de la letra un 10% adicional */
+  font-weight: bold !important;
+  color: #278919 !important;
+  display: flex;
+  align-items: center;
+  margin-left: 10px !important; /* Ajusta el margen izquierdo para acercar el número de teléfono al nav bar */
+}
+
+.phone-number a {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  margin-right: 5.5px !important;
+  font-size: 19.36px !important; /* Incrementa el tamaño del icono un 10% adicional */
+  color: #FFD700 !important;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Center the menu items */
   }
-  
-  .nav-item {
-    margin-right: 20px;
-  }
-  
+
   .nav-link {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 12px; /* Adjust padding for smaller screens */
   }
-  
-  .nav-link.active {
-    color: yellow;
-    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 10px !important;
   }
+
+  .logo {
+    width: 80px !important; /* Further reduce logo size */
+  }
+
+  .nav-link {
+    font-size: 14px; /* Adjust font size for very small screens */
+    padding: 6px 10px; /* Adjust padding for very small screens */
+  }
+
+  .phone-number {
+    font-size: 14px !important;
+    margin-top: 5px !important;
+  }
+
+  .phone-icon {
+    font-size: 14px !important;
+  }
+}

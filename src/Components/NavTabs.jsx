@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./nav-tabs.css";
 
 const NavTabs = ({ currentPage, handlePageChange }) => {
   return (
@@ -29,7 +30,7 @@ const NavTabs = ({ currentPage, handlePageChange }) => {
             currentPage === "Gallery" ? "nav-link active" : "nav-link"
           }
         >
-          Portfolio
+          Gallery
         </a>
       </li>
       <li className="nav-item">
@@ -41,7 +42,6 @@ const NavTabs = ({ currentPage, handlePageChange }) => {
           Contact
         </a>
       </li>
-      
     </ul>
   );
 };
