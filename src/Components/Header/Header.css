@@ -30,7 +30,8 @@
   color: #5a8369 !important;
   display: flex;
   align-items: center;
-  margin-left: 10px !important; /* Ajusta el margen izquierdo para acercar el número de teléfono al nav bar */
+  margin-left: auto; /* Mueve el número de teléfono hacia la derecha */
+  margin-right: 20px; /* Ajusta este valor según lo necesites */
 }
 
 .phone-number a {
