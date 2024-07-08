@@ -79,21 +79,21 @@
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
+  max-width: 1200px; /* Optional: set a max-width to limit the width */
 }
 
 .project-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  width: 45%;
+  width: calc(50% - 10px); /* Two items per row */
   margin-bottom: 20px;
 }
 
@@ -163,8 +163,13 @@
     margin: 0 5px; /* Reduce margin for smaller screens */
   }
 
+  .projects-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .project-item {
-    width: 90%; /* Make project items take more width on smaller screens */
+    width: 100%; /* Make project items take full width on smaller screens */
   }
 }
 
@@ -188,5 +193,9 @@
   .text-subtitle::before,
   .text-subtitle::after {
     margin: 0 2px; /* Further reduce margin for very small screens */
+  }
+
+  .projects-container {
+    gap: 10px; /* Reduce gap for very small screens */
   }
 }
