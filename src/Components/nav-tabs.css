@@ -15,6 +15,6 @@
 }
 
 .nav-link.active {
-  color: green; /* Cambiar a verde cuando se haga clic */
+  color: #5a8369; /* Cambiar a verde cuando se haga clic */
   font-weight: bold;
 }

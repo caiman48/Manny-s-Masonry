@@ -1,15 +1,30 @@
+import { useState } from 'react';
 import '../../index.css'; // Asegúrate de que esta línea esté antes
 import './Header.css'; // Asegúrate de que esta línea esté después
 
 import logo from '../../assets/logo.png';
 
 const Header = ({ currentPage, handlePageChange }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="header">
       <div className="logo-container">
         <img src={logo} alt="Manny's Stonework" className="logo" />
       </div>
-      <div className="nav-container">
+      <div className="phone-number">
+        <a href="tel:+1234567890">
+          <span className="phone-icon">📞</span> +1 (234) 567-890
+        </a>
+      </div>
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        ☰
+      </div>
+      <div className={`nav-container ${isMenuOpen ? 'open' : ''}`}>
         <ul className="nav-menu">
           <li>
             <a
@@ -48,11 +63,6 @@ const Header = ({ currentPage, handlePageChange }) => {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="phone-number">
-        <a href="tel:+1234567890">
-          <span className="phone-icon">📞</span> +1 (234) 567-890
-        </a>
       </div>
     </div>
   );

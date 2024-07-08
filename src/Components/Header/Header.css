@@ -24,6 +24,34 @@
   height: auto;
 }
 
+.phone-number {
+  font-size: 19.36px !important; /* Incrementa el tamaño de la letra un 10% adicional */
+  font-weight: bold !important;
+  color: #5a8369 !important;
+  display: flex;
+  align-items: center;
+  margin-left: 10px !important; /* Ajusta el margen izquierdo para acercar el número de teléfono al nav bar */
+}
+
+.phone-number a {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  margin-right: 5.5px !important;
+  font-size: 19.36px !important; /* Incrementa el tamaño del icono un 10% adicional */
+  color: #e3c516 !important;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .nav-container {
   display: flex;
   flex-grow: 1;
@@ -51,33 +79,25 @@
   font-weight: bold;
 }
 
-.phone-number {
-  font-size: 19.36px !important; /* Incrementa el tamaño de la letra un 10% adicional */
-  font-weight: bold !important;
-  color: #278919 !important;
-  display: flex;
-  align-items: center;
-  margin-left: 10px !important; /* Ajusta el margen izquierdo para acercar el número de teléfono al nav bar */
-}
-
-.phone-number a {
-  text-decoration: none !important;
-  color: inherit !important;
-  display: flex;
-  align-items: center;
-}
-
-.phone-icon {
-  margin-right: 5.5px !important;
-  font-size: 19.36px !important; /* Incrementa el tamaño del icono un 10% adicional */
-  color: #FFD700 !important;
-}
-
 @media (max-width: 768px) {
-  .nav-menu {
+  .nav-container {
+    display: none;
     flex-direction: column;
-    gap: 10px;
-    align-items: center; /* Center the menu items */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-container.open {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 
   .nav-link {

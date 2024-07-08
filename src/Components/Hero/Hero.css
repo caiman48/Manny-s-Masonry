@@ -36,7 +36,7 @@
   font-family: 'EB Garamond', serif;
   font-size: 36px;
   font-weight: bold;
-  color: #278919;
+  color: #5a8369;
   text-align: center;
   margin-bottom: 10px;
   display: flex;
@@ -59,7 +59,7 @@
 .text-subtitle {
   font-family: 'EB Garamond', serif;
   font-size: 22px;  /* Increase font size */
-  color: #278919;  /* Change color */
+  color: #0c0c0c;  /* Change color */
   text-align: center;
   font-style: italic;
   position: relative;
@@ -110,7 +110,7 @@
   font-family: 'EB Garamond', serif;
   margin-top: 0;
   font-size: 24px; /* Adjust the font size */
-  color: #278919; /* Change the color */
+  color: #5a8369; /* Change the color */
   font-weight: bold; /* Adjust the font weight */
   text-align: center; /* Center the text */
 }
@@ -129,7 +129,7 @@
   padding: 10px 20px;
   margin-top: 10px;
   border: none;
-  background-color: #278919;
+  background-color: #5a8369;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -137,7 +137,7 @@
 }
 
 .project-button:hover {
-  background-color: #FFD700;
+  background-color: #5a8369;
 }
 
 /* Media Queries for Responsiveness */
