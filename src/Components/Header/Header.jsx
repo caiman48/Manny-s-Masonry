@@ -16,16 +16,11 @@ const Header = ({ currentPage, handlePageChange }) => {
       <div className="logo-container">
         <img src={logo} alt="Manny's Stonework" className="logo" />
       </div>
-      <div className="phone-number">
-        <a href="tel:+1234567890">
-          <span className="phone-icon">📞</span> +1 (234) 567-890
-        </a>
-      </div>
-      <div className="hamburger-menu" onClick={toggleMenu}>
-        ☰
-      </div>
-      <div className={`nav-container ${isMenuOpen ? 'open' : ''}`}>
-        <ul className="nav-menu">
+      <div className="nav-container">
+        <div className="hamburger-menu" onClick={toggleMenu}>
+          ☰
+        </div>
+        <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <li>
             <a
               href="#hero"
@@ -63,6 +58,11 @@ const Header = ({ currentPage, handlePageChange }) => {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="phone-number">
+        <a href="tel:+1234567890">
+          <span className="phone-icon">📞</span> +1 (234) 567-890
+        </a>
       </div>
     </div>
   );

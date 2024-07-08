@@ -82,7 +82,7 @@
 
 @media (max-width: 768px) {
   .nav-container {
-    display: none;
+    display: none; /* Ocultar el nav-container en pantallas pequeñas */
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -102,8 +102,19 @@
   }
 
   .nav-link {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    padding: 8px 12px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Ajustar tamaño de fuente para pantallas más pequeñas */
+    padding: 8px 12px; /* Ajustar padding para pantallas más pequeñas */
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-container {
+    display: flex !important;
+  }
+
+  .phone-number {
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -113,12 +124,12 @@
   }
 
   .logo {
-    width: 80px !important; /* Further reduce logo size */
+    width: 80px !important; /* Reducir aún más el tamaño del logo */
   }
 
   .nav-link {
-    font-size: 14px; /* Adjust font size for very small screens */
-    padding: 6px 10px; /* Adjust padding for very small screens */
+    font-size: 14px; /* Ajustar tamaño de fuente para pantallas muy pequeñas */
+    padding: 6px 10px; /* Ajustar padding para pantallas muy pequeñas */
   }
 
   .phone-number {
