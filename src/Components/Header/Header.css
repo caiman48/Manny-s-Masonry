@@ -99,6 +99,7 @@
 
   .hamburger-menu {
     display: block;
+    order: 2; /* Display hamburger menu after phone number */
   }
 
   .nav-link {
@@ -107,18 +108,14 @@
   }
 
   .phone-number {
-    order: 2;
+    order: 1; /* Ensure phone number is displayed before hamburger menu */
     margin-left: 0;
-  }
-
-  .hamburger-menu {
-    order: 1;
   }
 }
 
 @media (min-width: 769px) {
   .phone-number {
-    order: 1; /* Make sure phone number is ordered first */
+    order: 1; /* Ensure phone number is ordered first */
     margin-left: auto !important;
     margin-right: 20px !important;
   }
