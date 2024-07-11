@@ -18,7 +18,7 @@ const Header = ({ currentPage, handlePageChange }) => {
       </div>
       <div className="phone-number">
         <a href="tel:+1234567890">
-          <span className="phone-icon">📞</span> +1 (234) 567-890
+          <span className="phone-icon">📞</span> +1 (203) 435-1024
         </a>
       </div>
       <div className="hamburger-menu" onClick={toggleMenu}>
