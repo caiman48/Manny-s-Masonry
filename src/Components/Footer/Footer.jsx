@@ -1,31 +1,25 @@
 import "./Footer.css";
-import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <a
-          href="https://github.com/caiman48?tab=repositories"
+      <a
+          href="https://www.instagram.com/mannys_stonework/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub />
+          <FaInstagram />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.facebook.com/yourusername"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin />
+          <FaFacebook />
         </a>
-        <a
-          href="https://stackoverflow.com/users/youruserid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaStackOverflow />
-        </a>
+
       </div>
     </footer>
   );
