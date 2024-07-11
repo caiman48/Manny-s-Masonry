@@ -6,7 +6,7 @@ const About = () => {
     <div className='about' id="about">
       <h2>About Us</h2>
       <div className='about-content'>
-        <img src={logo} alt='Profile' className='about-logo' />
+        <img src={logo} alt="Manny's Stonework Logo" className='about-logo' />
         <div className='about-text'>
           <p>
             Welcome to Manny&apos;s Stonework! Established two years ago, we have rapidly expanded our services to bring exceptional stonework to our community. Our commitment to quality and craftsmanship has made us a trusted name in the industry.
