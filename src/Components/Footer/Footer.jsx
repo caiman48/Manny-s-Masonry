@@ -13,7 +13,7 @@ const Footer = () => {
           <FaInstagram />
         </a>
         <a
-          href="https://www.facebook.com/MannyStonework/?_rdr"
+          href="https://www.facebook.com/MannyStonework"
           target="_blank"
           rel="noopener noreferrer"
         >
