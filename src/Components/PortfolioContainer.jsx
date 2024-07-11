@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Hero from "./Hero/Hero";
 import About from "./About/About";
@@ -13,6 +13,22 @@ import "../index.css";
 const PortfolioContainer = () => {
   const [currentPage, setCurrentPage] = useState("Hero");
 
+  useEffect(() => {
+    const hash = window.location.hash.substring(1); // Remove the '#' from the hash
+    if (hash) {
+      setCurrentPage(hash.charAt(0).toUpperCase() + hash.slice(1));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (currentPage) {
+      const element = document.getElementById(currentPage.toLowerCase());
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [currentPage]);
+
   const renderPage = () => {
     switch (currentPage) {
       case "Hero":
@@ -23,13 +39,15 @@ const PortfolioContainer = () => {
         return <Gallery />;
       case "Contact":
         return <Contact />;
-
       default:
         return <Hero />;
     }
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    window.location.hash = page.toLowerCase();
+  };
 
   return (
     <div>
