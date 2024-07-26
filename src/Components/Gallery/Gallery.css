@@ -88,6 +88,13 @@
   width: calc(33.333% - 20px);
 }
 
+.Image-comment {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
 .Close-button {
   background: none;
   border: none;

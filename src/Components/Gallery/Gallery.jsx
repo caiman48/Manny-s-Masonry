@@ -24,10 +24,11 @@ const Gallery = () => {
             {currentProject.images.map((image, index) => (
               <div key={index} className="Modal-image">
                 <ModalImage
-                  small={image}
-                  large={image}
+                  small={image.src}
+                  large={image.src}
                   alt={`${currentProject.title} - ${index + 1}`}
                 />
+                <p className="Image-comment">{image.comment}</p>
               </div>
             ))}
           </div>

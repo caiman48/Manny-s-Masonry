@@ -49,9 +49,9 @@
 }
 
 .menu-icon {
-  font-size: 20px;
+  font-size: 17px;
   cursor: pointer;
-  margin-left: 20px; /* Asegura que haya espacio entre el número de teléfono y el icono del menú */
+  margin-left: 50px; /* Asegura que haya espacio entre el número de teléfono y el icono del menú */
 }
 
 .nav-container {
