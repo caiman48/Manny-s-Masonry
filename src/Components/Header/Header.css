@@ -45,13 +45,13 @@
 .phone-icon {
   margin-right: 5.5px !important;
   font-size: 19.36px !important;
-  color:green !important;
+  color: green !important;
 }
 
-.hamburger-menu {
-  display: none;
-  font-size: 24px;
+.menu-icon {
+  font-size: 20px;
   cursor: pointer;
+  margin-left: 20px; /* Asegura que haya espacio entre el número de teléfono y el icono del menú */
 }
 
 .nav-container {
@@ -98,9 +98,9 @@
     display: flex;
   }
 
-  .hamburger-menu {
+  .menu-icon {
     display: block;
-    order: 2; /* Display hamburger menu after phone number */
+    order: 2; /* Display menu icon after phone number */
   }
 
   .nav-link {
@@ -109,7 +109,7 @@
   }
 
   .phone-number {
-    order: 1; /* Ensure phone number is displayed before hamburger menu */
+    order: 1; /* Ensure phone number is displayed before menu icon */
     margin-left: 0;
   }
 }
@@ -125,7 +125,7 @@
     display: flex !important;
   }
 
-  .hamburger-menu {
+  .menu-icon {
     display: none;
   }
 }
