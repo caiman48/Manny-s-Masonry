@@ -8,7 +8,7 @@ const Header = ({ currentPage, handlePageChange }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen);  
   };
 
   return (
@@ -21,7 +21,7 @@ const Header = ({ currentPage, handlePageChange }) => {
           <span className="phone-icon">📞</span> +1 (203) 435-1024
         </a>
       </div>
-      <div className="hamburger-menu" onClick={toggleMenu}>
+      <div className="Menu" onClick={toggleMenu}>
         ☰
       </div>
       <div className={`nav-container ${isMenuOpen ? 'open' : ''}`}>
