@@ -21,7 +21,7 @@ const Header = ({ currentPage, handlePageChange }) => {
           <span className="phone-icon">📞</span> +1 (203) 435-1024
         </a>
       </div>
-      <div className="Menu" onClick={toggleMenu}>
+      <div className="hamburger-menu" onClick={toggleMenu}>
         ☰
       </div>
       <div className={`nav-container ${isMenuOpen ? 'open' : ''}`}>
