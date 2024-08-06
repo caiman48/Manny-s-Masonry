@@ -45,20 +45,20 @@ const Hero = () => {
           </div>
         </div>
         <div className="project-item">
-          <img src={project4_img} alt="New Project 1" className="project-image" />
+          <img src={project4_img} alt="Stone Fire Pit with Curved Seating Wall" className="project-image" />
           <div className="project-content">
-            <h2>New Project 1</h2>
+            <h2>Stone Fire Pit with Curved Seating Wall</h2>
             <p>
-              Description for new project 1.
+              This beautifully crafted stone fire pit is complemented by a curved seating wall, creating a perfect gathering spot for family and friends. The carefully selected stones and expert masonry work blend seamlessly with the surrounding landscape, offering both functionality and aesthetic appeal.
             </p>
           </div>
         </div>
         <div className="project-item">
-          <img src={project5_img} alt="New Project 2" className="project-image" />
+          <img src={project5_img} alt="Multi-level Stone Garden Terrace" className="project-image" />
           <div className="project-content">
-            <h2>New Project 2</h2>
+            <h2>Multi-level Stone Garden Terrace</h2>
             <p>
-              Description for new project 2.
+              This elegant multi-level garden terrace showcases meticulous stonework and expert craftsmanship. The terraced design not only adds visual interest but also provides practical garden space, enhancing the overall beauty and functionality of the outdoor area.
             </p>
           </div>
         </div>
