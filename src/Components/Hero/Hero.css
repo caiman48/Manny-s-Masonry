@@ -6,20 +6,20 @@
   background-color: #F5F5F5;
   color: #333333;
   width: 100%;
-  margin-top: 60px; /* Adjust this according to the height of the header */
+  margin-top: 60px;
 }
 
 .hero-image1-container {
   width: 100%;
-  height: 60vh; /* Adjust the height as needed */
+  height: 60vh;
   overflow: hidden;
-  margin-top: 0; /* Adjust to start the image right below the header */
+  margin-top: 0;
 }
 
 .hero-image1 {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Adjust to maintain image proportions */
+  object-fit: cover;
 }
 
 .text-section {
@@ -40,7 +40,7 @@
   text-align: center;
   margin-bottom: 10px;
   display: flex;
-  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: linear-gradient(248deg, #6d6d6b 0.36%, #30a35a 100%);
@@ -61,14 +61,14 @@
 
 .text-subtitle {
   font-family: 'EB Garamond', serif;
-  font-size: 22px;  /* Increase font size */
-  color: #0c0c0c;  /* Change color */
+  font-size: 22px;
+  color: #0c0c0c;
   text-align: center;
   font-style: italic;
   position: relative;
   display: flex;
   align-items: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);  /* Add text shadow */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .text-subtitle::before,
@@ -81,27 +81,22 @@
 
 .projects-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
   padding: 20px;
-  max-width: 1200px; /* Optional: set a max-width to limit the width */
-}
-
-.project-column {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  max-width: 1200px;
 }
 
 .project-item {
+  flex: 0 0 calc(50% - 20px); /* Ajusta el ancho de los elementos del proyecto */
   display: flex;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  width: calc(50% - 10px); /* Two items per row */
+  margin-bottom: 20px;
 }
 
 .project-item img {
@@ -116,19 +111,19 @@
 .project-content h2 {
   font-family: 'EB Garamond', serif;
   margin-top: 0;
-  font-size: 24px; /* Adjust the font size */
-  color: #5a8369; /* Change the color */
-  font-weight: bold; /* Adjust the font weight */
-  text-align: center; /* Center the text */
+  font-size: 24px;
+  color: #5a8369;
+  font-weight: bold;
+  text-align: center;
 }
 
 .project-content p {
   font-family: 'EB Garamond', serif;
-  font-size: 16px; /* Adjust the font size */
-  color: #555; /* Change the color */
-  line-height: 1.5; /* Adjust line spacing for better readability */
-  text-align: justify; /* Justify the text */
-  font-style: italic; /* Add italic style */
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+  font-style: italic;
 }
 
 .project-button {
@@ -147,67 +142,61 @@
   background-color: #5a8369;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .hero-image1-container {
-    height: 40vh; /* Adjust height for smaller screens */
+    height: 40vh;
   }
-  
+
   .text-title {
-    font-size: 28px; /* Adjust font size for smaller screens */
+    font-size: 28px;
   }
 
   .text-title .icon {
-    font-size: 28px; /* Adjust icon size for smaller screens */
+    font-size: 28px;
   }
 
   .text-subtitle {
-    font-size: 18px; /* Adjust subtitle font size for smaller screens */
+    font-size: 18px;
   }
 
   .text-subtitle::before,
   .text-subtitle::after {
-    margin: 0 5px; /* Reduce margin for smaller screens */
+    margin: 0 5px;
   }
 
   .projects-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .project-column {
     flex-direction: column;
     gap: 20px;
   }
 
   .project-item {
-    width: 100%; /* Make project items take full width on smaller screens */
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .hero-image1-container {
-    height: 30vh; /* Adjust height for very small screens */
+    height: 30vh;
   }
 
   .text-title {
-    font-size: 24px; /* Adjust font size for very small screens */
+    font-size: 24px;
   }
 
   .text-title .icon {
-    font-size: 24px; /* Adjust icon size for very small screens */
+    font-size: 24px;
   }
 
   .text-subtitle {
-    font-size: 16px; /* Adjust subtitle font size for very small screens */
+    font-size: 16px;
   }
 
   .text-subtitle::before,
   .text-subtitle::after {
-    margin: 0 2px; /* Further reduce margin for very small screens */
+    margin: 0 2px;
   }
 
   .projects-container {
-    gap: 10px; /* Reduce gap for very small screens */
+    gap: 10px;
   }
 }
